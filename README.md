@@ -1,4 +1,4 @@
-# React Template - Speed Up Project Creation
+# Silk React Template - Speed Up Project Creation
 
 This React template is designed to help you quickly set up new React projects. It includes common pages, configured routes, protected routes, and more, saving you time and effort in setting up repetitive tasks.
 
