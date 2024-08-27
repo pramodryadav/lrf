@@ -1,0 +1,554 @@
+/* General Container Styling */
+
+.loginContainer {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./assets/images/loginImgbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Login Card Styling */
+
+.loginLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginCard {
+  padding: 40px;
+  max-width: 410px;
+  width: 100%;
+  box-shadow: 0px 0px 5px 1px #ccc;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 15px;
+}
+
+.loginCard:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.loginLogo {
+  max-width: 275px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.loginTitle {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
+
+.loginSubtitle {
+  text-align: center;
+  color: #666;
+}
+
+.loginTextField {
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.loginTextField .MuiOutlinedInput-root {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.loginTextField .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: #ddd;
+}
+
+.loginTextField .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #aaa;
+}
+
+.loginTextField .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1a73e8;
+}
+
+/* Button Styling */
+
+.loginButton {
+  margin-bottom: 8px;
+  background-image: linear-gradient(176deg, #30cfd0 0%, #330867 100%);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #0f5bbd;
+  transform: scale(1.05);
+}
+
+/* Forgot Password and Sign-Up Links */
+
+.loginOptions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.loginCheckbox {
+  margin-right: 16px;
+}
+
+.loginForgotPassword, .loginSignUp {
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.loginForgotPassword:hover, .loginSignUp:hover {
+  color: #0f5bbd;
+}
+
+.gridPadding {
+  padding: 5px !important;
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 600px) {
+  .loginCard {
+    padding: 1.5rem;
+  }
+  .loginLogo {
+    max-width: 275px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 960px) {
+  .loginCard {
+    padding: 45px;
+  }
+}
+
+/* Sidebar Styling */
+
+.selectedMenu {
+  color: #7293ff;
+}
+
+.activeLink {
+  border-left: 2px solid #7293ff;
+}
+
+.sidebarLogo {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+}
+
+.activeLinkSidebar {
+  background-color: #ffffff2b;
+  padding: 8px 16px;
+  border-radius: 0px 20px 20px 0px;
+  height: 45px;
+  border: 1px solid #ccccccab;
+}
+
+.listSidebar {
+  margin-inline-end: 8px;
+  margin-inline-start: 4px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .loginRight {
+    display: none;
+  }
+}
+
+/* Forgot Password Page Styling */
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.forgotPasswordContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.forgotPasswordLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgotPasswordLogo {
+  max-width: 150px;
+}
+
+.forgotPasswordCard {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.forgotPasswordTextField, .resetPasswordTextField {
+  margin-bottom: 10px;
+}
+
+.forgotPasswordButton, .resetPasswordButton, .backToLoginButton {
+  margin-top: 20px;
+}
+
+.backToLoginLink {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 404 Page Styling */
+
+.page-not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 16px;
+}
+
+.page-not-found-image {
+  max-width: 500px;
+  height: auto;
+  width: 100%;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.page-not-found-message {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.page-not-found-text {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.page-not-found-button {
+  margin-top: 16px;
+  background-image: linear-gradient(25deg, #30cfd0 0%, #330867 100%);
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.page-not-found-button:hover {
+  background-color: #1a5bb8;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* About Us Page Styling */
+
+.aboutContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('./assets/images/aboutUsbg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #e3f0ff;
+}
+
+
+
+.align-s-center {
+  align-self: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.aboutUS {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(./assets/images/aboutUsUI.jpg);
+  padding: 15px;
+  height: 180px;
+  margin-bottom: 20px;
+} 
+
+.aboutUSBrandContainer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Table Styling */
+
+.MuiTable-root {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #bcbcbc;
+}
+
+.header-cell {
+  color: #000;
+  padding: 6px 8px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.actionIcon {
+  font-size: 17px;
+  color: #7a7a7a;
+  border-radius: 5px;
+}
+
+.toolbarContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 589px) {
+  .toolbarContainer {
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+}
+
+.view-cell {
+  padding: 0;
+  width: 60px;
+}
+
+.filterOptionsTooltip {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.filterOptionsTooltipBox {
+  border: 1px solid #8282826b;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  padding: 4px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tooltipIcon {
+  color: #838383d6;
+  cursor: pointer;
+}
+
+.table-container {
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.data-cell {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.search-field {
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  padding: 0 8px;
+  margin-left: 16px;
+  height: 34px;
+}
+
+.search-field .MuiInputBase-input {
+  padding: 8px 0;
+}
+
+/* Receipt Dialog Styling */
+
+.reciptToolbar {
+  background-color: #00496f;
+  min-height: 56px;
+}
+
+.editTX {
+  width: 100%;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.col-gap-10 {
+  column-gap: 10px;
+}
+
+.row-gap-10 {
+  row-gap: 10px;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.editTXCell {
+  padding: 5px 0px;
+  border-bottom: 1px solid #ddd;
+}
+
+.status-completed {
+  background-color: #c0ebca;
+  color: #1c7800;
+}
+
+.status-pending {
+  background-color: #cdd4ff;
+  color: #3953ff;
+}
+
+.status-failed {
+  background-color: #f8d7da;
+  color: #e10000;
+}
+
+.status-completed, .status-failed, .status-pending {
+  padding: 4px;
+  border-radius: 15px;
+  font-size: 10px;
+  display: inline-block;
+  width: 85px;
+  text-align: center;
+}
+
+.status-cell {
+  width: 85px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .icon-container {
+    width: 100%;
+  }
+}
+
+/* About */
+
+.Aboutheading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.aboutLogo {
+  max-width: 250px;
+  height: auto;
+}
+
+.infoContainer {
+  display: flex;
+  padding: 15px;
+}
+
+.aboutCard {
+  /* background-image: url('../../assets/images/aboutUs.jpg');  */
+  background-size: cover;
+  background-position: center;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px #ccc;
+}
+
+.aboutCard:hover {
+  /* border: 2px solid #0044eb; */
+  box-shadow: #00155142 -2px 10px 13px 4px;
+}
+
+.aboutCardIcon {
+  font-size: 60px;
+  color: #0044eb;
+  background-color: #0044eb26;
+  padding: 3px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.abtBackIcon {
+  font-size: 39px;
+  color: white;
+  cursor: pointer;
+  background: #ffffff6e;
+  border-radius: 50px;
+  padding: 4px;
+  margin-top: -12px;
+}
+
+.abtBackIcon:hover {
+  font-size: 39px;
+  color: black;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50px;
+  padding: 4px;
+  margin-top: -12px;
+}
+
+
+.headingBackIcon {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add space between the icon and text */
+}
+
+
+.aboutUSContainer {
+  display: flex;
+  justify-content: space-between;
+}
