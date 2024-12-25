@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
         children: [
           { index: true, element: <Home /> },
-          // { index: true, element: <DataGridDemo/>}
+         
           /* the rest of the routes */
         ],
       }, 
